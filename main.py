@@ -1,0 +1,27 @@
+import numpy as np
+def array_output(a):
+  print()
+  print(a)
+
+a = np.zeros(10)
+b = np.ones(10)
+c = np.full(10, 5)
+d = np.arange(10, 50)
+e = np.arange(10, 50, 2)
+f = np.arange(0, 9)
+f.resize(3,3)
+g = np.random.random()
+h = np.random.normal(0, 1, 15)
+i = np.arange(0.01, 1+0.01, 0.01)
+i.resize(10,10)
+
+mat = np.arange(1,26).reshape(5,5)
+array_output(mat)
+array_output(mat[2:, 1:])
+array_output(mat[3, 4])
+array_output(mat[:3, 1])
+array_output(mat[4:, :])
+array_output(mat[3:, :])
+array_output(mat.sum())
+array_output(np.std(mat))
+array_output(mat.sum(axis = 0))
